@@ -44,4 +44,5 @@ export const TRANSLATION_KEYS = {
   PERFORMANCE_METRICS: 'performance_metrics',
 } as const;
 
-export type TranslationKey = keyof typeof TRANSLATION_KEYS;
+// Type representing the string values that are used as keys in the translations
+export type TranslationKey = typeof TRANSLATION_KEYS[keyof typeof TRANSLATION_KEYS];

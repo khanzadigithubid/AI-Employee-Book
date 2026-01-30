@@ -2,11 +2,11 @@
 
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
-import { useI18n } from '@/i18n/context';
+import { useTranslations, TRANSLATION_KEYS } from '@/i18n/hooks';
 import { chapters } from '@/data/translated-chapters';
 
 export default function Contact() {
-  const { language } = useI18n();
+  const { t, language } = useTranslations();
 
   // Get the current language's chapters
   const currentLanguageChapters = chapters.map(chapter => chapter.translations[language]);

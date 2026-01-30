@@ -1,9 +1,7 @@
 import { useI18n } from '@/i18n/context';
-import { TRANSLATION_KEYS } from '@/i18n/translation-keys';
+import { TRANSLATION_KEYS, type TranslationKey } from '@/i18n/translation-keys';
 
 export { TRANSLATION_KEYS };
-
-export type TranslationKey = keyof typeof TRANSLATION_KEYS;
 
 // Translations for each language
 const TRANSLATIONS = {
